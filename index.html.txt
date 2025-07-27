@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Startup - Innovate & Grow with AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate gray text */
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for loading spinner */
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #6366f1; /* Indigo-500 */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-10 lg:px-16 flex justify-between items-center sticky top-0 z-50 rounded-b-lg">
+        <div class="text-2xl font-bold text-indigo-600">YourStartup</div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Features</a>
+            <a href="#ai-estimator" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">AI Estimator</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Testimonials</a>
+            <a href="#team" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Team</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="#features" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Features</a>
+        <a href="#ai-estimator" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">AI Estimator</a>
+        <a href="#testimonials" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Testimonials</a>
+        <a href="#team" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Team</a>
+        <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Contact</a>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-6 md:px-10 lg:px-16 text-center rounded-lg mx-4 mt-8 shadow-lg">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+            Innovate, Create, Elevate Your Business with AI
+        </h1>
+        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+            We provide cutting-edge AI solutions to help your business thrive in the digital age,
+            starting with smart real estate insights.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#ai-estimator" class="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                Try Our AI Estimator
+            </a>
+            <a href="#features" class="bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-800 transition duration-300 transform hover:scale-105 border border-white">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg mx-4 mt-8 shadow-lg">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Core Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Feature 1 -->
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <div class="text-indigo-600 mb-4">
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.25-3M15 10V5a3 3 0 00-3-3H9a3 3 0 00-3 3v5m-3 6h18a3 3 0 003-3v-5a3 3 0 00-3-3H3a3 3 0 00-3 3v5a3 3 0 003 3z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Innovative AI Solutions</h3>
+                <p class="text-gray-600 text-center">We leverage the latest AI technologies to build solutions that are not just effective, but also future-proof.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <div class="text-indigo-600 mb-4">
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Scalable Architecture</h3>
+                <p class="text-gray-600 text-center">Our systems are designed to scale with your growth, ensuring seamless performance even at high demand.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <div class="text-indigo-600 mb-4">
+                    <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.592 1M12 8V3m0 9v3m0 3.01V21M21 12h-3.01M3 12H1m15.535-6.465l-2.122-2.122M4.465 19.535l-2.122 2.122M19.535 4.465l2.122-2.122M4.465 4.465L2.343 2.343"></path></svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Dedicated Support</h3>
+                <p class="text-gray-600 text-center">We offer 24/7 dedicated support to ensure your operations run smoothly and efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Renovation ROI Estimator Section -->
+    <section id="ai-estimator" class="py-16 px-6 md:px-10 lg:px-16 bg-purple-100 rounded-lg mx-4 mt-8 shadow-lg flex items-center justify-center">
+        <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl w-full">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">AI Renovation ROI Estimator</h2>
+            <p class="text-center text-gray-600 mb-8">Unlock the potential of your property with AI-driven insights. Get estimated costs, value added, and ROI for your renovations, or upload an image for AI-powered suggestions!</p>
+            <form id="roiForm" class="space-y-6">
+                <!-- Form inputs remain the same -->
+                 <div>
+                    <label for="zipCode" class="block text-sm font-medium text-gray-700 mb-1">Zip Code (e.g., 90210)</label>
+                    <input type="text" id="zipCode" name="zipCode" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter Zip Code">
+                </div>
+                <div>
+                    <label for="currentValue" class="block text-sm font-medium text-gray-700 mb-1">Current Property Value ($)</label>
+                    <input type="number" id="currentValue" name="currentValue" required min="10000" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="e.g., 350000">
+                </div>
+                <div>
+                    <label for="renovationType" class="block text-sm font-medium text-gray-700 mb-1">Renovation Type</label>
+                    <select id="renovationType" name="renovationType" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <option value="kitchen">Kitchen Remodel</option>
+                        <option value="bathroom">Bathroom Remodel</option>
+                    </select>
+                </div>
+                 <div class="border-t border-gray-200 pt-6 mt-6">
+                    <label for="roomImage" class="block text-sm font-medium text-gray-700 mb-2">Upload Room Image for AI Analysis (Optional)</label>
+                    <input type="file" id="roomImage" name="roomImage" accept="image/jpeg, image/png" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 cursor-pointer">
+                </div>
+                <div class="text-center">
+                    <button type="submit" id="estimateButton" class="inline-flex items-center justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 transform hover:scale-105">
+                        <span id="buttonText">Get Estimate</span>
+                        <div id="spinner" class="spinner ml-3 hidden"></div>
+                    </button>
+                </div>
+            </form>
+            <div id="results" class="mt-10 p-6 bg-indigo-50 rounded-lg shadow-inner hidden"></div>
+            <div id="errorMessage" class="mt-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md hidden"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg mx-4 mt-8 shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Trusted by Innovators</h2>
+            <p class="text-lg text-gray-600 mb-12">Don't just take our word for it. Here's what our clients have to say.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <p class="text-gray-600 mb-6">"The AI estimator gave us the confidence to move forward with our renovation. The insights were invaluable and surprisingly accurate. A game-changer for property investors!"</p>
+                    <div class="flex items-center justify-center">
+                        <img src="https://placehold.co/48x48/E2E8F0/4A5568?text=JS" alt="Jane Smith" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Jane Smith</p>
+                            <p class="text-sm text-indigo-600">Real Estate Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <p class="text-gray-600 mb-6">"YourStartup's platform is intuitive and powerful. We were able to validate our new service offering in a fraction of the time it would normally take. Highly recommended."</p>
+                    <div class="flex items-center justify-center">
+                        <img src="https://placehold.co/48x48/E2E8F0/4A5568?text=MD" alt="Michael Doe" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Michael Doe</p>
+                            <p class="text-sm text-indigo-600">CEO, Future Ventures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 px-6 md:px-10 lg:px-16 bg-gray-50 rounded-lg mx-4 mt-8 shadow-lg">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">The Minds Behind the Magic</h2>
+            <p class="text-lg text-gray-600 mb-12">We're a passionate group of strategists, designers, and technologists dedicated to your success.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Team Member 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/128x128/6366F1/FFFFFF?text=A" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Alex Chen</h3>
+                    <p class="text-indigo-600 mb-2">Co-Founder & CEO</p>
+                    <p class="text-gray-500 text-sm mb-4">Visionary leader with a passion for disruptive technology and venture building.</p>
+                    <div class="flex justify-center space-x-4 text-gray-500">
+                        <a href="#" class="hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-indigo-600"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/128x128/818CF8/FFFFFF?text=B" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Brenda Lee</h3>
+                    <p class="text-indigo-600 mb-2">Co-Founder & CTO</p>
+                    <p class="text-gray-500 text-sm mb-4">Expert AI engineer turning complex problems into elegant, scalable solutions.</p>
+                    <div class="flex justify-center space-x-4 text-gray-500">
+                        <a href="#" class="hover:text-indigo-600"><i class="fab fa-github"></i></a>
+                        <a href="#" class="hover:text-indigo-600"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/128x128/A5B4FC/FFFFFF?text=C" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-indigo-200">
+                    <h3 class="text-xl font-semibold text-gray-900">Chris Grant</h3>
+                    <p class="text-indigo-600 mb-2">Head of Product</p>
+                    <p class="text-gray-500 text-sm mb-4">Dedicated to crafting user-centric products that delight and deliver value.</p>
+                    <div class="flex justify-center space-x-4 text-gray-500">
+                        <a href="#" class="hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-indigo-600"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg mx-4 mt-8 shadow-lg">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-800">From Our Blog</h2>
+            <p class="text-lg text-gray-600 text-center mb-12">Insights on AI, startups, and market trends.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/A5B4FC/374151?text=AI+Trends" alt="Blog post image on AI trends" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-indigo-600 mb-2">Tech Trends</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Top 5 AI Trends Shaping the Real Estate Market in 2025</h3>
+                        <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">Read More &rarr;</a>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/818CF8/374151?text=Startup+Life" alt="Blog post image on startup life" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-indigo-600 mb-2">Startup Journey</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">From Idea to MVP: Our Lean Approach to Product Validation</h3>
+                        <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">Read More &rarr;</a>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/6366F1/374151?text=VC+Pitch" alt="Blog post image on venture capital" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm text-indigo-600 mb-2">Venture Capital</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-3">What VCs Look For: A Founder's Guide to a Winning Pitch Deck</h3>
+                        <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dedicated CTA Section -->
+    <section class="bg-gradient-to-r from-purple-700 to-indigo-700 text-white py-20 px-6 md:px-10 lg:px-16 text-center rounded-lg mx-4 mt-8 shadow-lg">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Build the Future?</h2>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Let's connect and explore how our AI solutions can accelerate your growth. Your next big venture starts here.</p>
+        <a href="#contact" class="bg-white text-indigo-700 px-10 py-4 rounded-full font-bold shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105 text-lg">
+            Get in Touch
+        </a>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg mx-4 mt-8 shadow-lg">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+        <div class="max-w-2xl mx-auto">
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="your.email@example.com">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="How can we help you?"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10 lg:px-16 mt-8 rounded-t-lg">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <p>&copy; 2025 YourStartup. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // --- JavaScript for the AI Renovation ROI Estimator ---
+        // Note: The original JavaScript logic is maintained.
+        // It's recommended to replace the fetch endpoint with a real API.
+        const roiForm = document.getElementById('roiForm');
+        const estimateButton = document.getElementById('estimateButton');
+        const buttonText = document.getElementById('buttonText');
+        const spinner = document.getElementById('spinner');
+        const resultsDiv = document.getElementById('results');
+        const errorMessageDiv = document.getElementById('errorMessage');
+        const roomImageInput = document.getElementById('roomImage');
+
+        roiForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            buttonText.textContent = 'Analyzing...';
+            spinner.classList.remove('hidden');
+            estimateButton.disabled = true;
+            resultsDiv.classList.add('hidden');
+            errorMessageDiv.classList.add('hidden');
+
+            const formData = new FormData(roiForm);
+            const data = Object.fromEntries(formData.entries());
+            const imageFile = roomImageInput.files[0];
+
+            // --- Mock API Call ---
+            // In a real application, you would send this data to your backend.
+            // Here, we simulate a delay and response.
+            setTimeout(() => {
+                try {
+                    let htmlResult = '';
+                    
+                    // Simulate numerical analysis
+                    if (data.zipCode && data.currentValue) {
+                        const cost = data.renovationType === 'kitchen' ? 25000 : 15000;
+                        const valueAdded = cost * 1.5;
+                        const roi = ((valueAdded - cost) / cost) * 100;
+                        htmlResult += `
+                            <div class="mb-6 pb-6 border-b border-indigo-200">
+                                <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Numerical Estimate</h3>
+                                <p><span class="font-medium text-indigo-700">Estimated Cost:</span> <span class="font-bold text-gray-900">$${cost.toLocaleString()}</span></p>
+                                <p><span class="font-medium text-indigo-700">Estimated Value Added:</span> <span class="font-bold text-gray-900">$${valueAdded.toLocaleString()}</span></p>
+                                <p><span class="font-medium text-indigo-700">Projected ROI:</span> <span class="font-bold text-green-700">${roi.toFixed(1)}%</span></p>
+                            </div>
+                        `;
+                    }
+
+                    // Simulate image analysis
+                    if (imageFile) {
+                         htmlResult += `
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">AI Image Analysis</h3>
+                                <p class="mb-2"><span class="font-medium text-purple-700">What's Good:</span> <span class="text-gray-900">Good natural light, solid layout.</span></p>
+                                <p class="mb-2"><span class="font-medium text-purple-700">Needs Improvement:</span> <span class="text-gray-900">Outdated cabinets, worn-out flooring.</span></p>
+                                <p><span class="font-medium text-purple-700">Recommendation:</span> <span class="text-gray-900">Consider refacing cabinets and installing new vinyl plank flooring for a high-ROI update.</span></p>
+                            </div>
+                        `;
+                    }
+
+                    if(htmlResult === '') {
+                        throw new Error("Please fill in the property details to get an estimate.");
+                    }
+
+                    resultsDiv.innerHTML = htmlResult;
+                    resultsDiv.classList.remove('hidden');
+
+                } catch (error) {
+                    errorMessageDiv.textContent = error.message;
+                    errorMessageDiv.classList.remove('hidden');
+                } finally {
+                    buttonText.textContent = 'Get Estimate';
+                    spinner.classList.add('hidden');
+                    estimateButton.disabled = false;
+                }
+            }, 1500); // 1.5 second delay
+        });
+    </script>
+</body>
+</html>
