@@ -2,10 +2,273 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Startup - Innovate & Grow with AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello World!</h1>
-    <p>If you can see this, the test is working.</p>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-10 lg:px-16 flex justify-between items-center sticky top-0 z-50 rounded-b-lg">
+        <div class="text-2xl font-bold text-indigo-600">YourStartup</div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Features</a>
+            <a href="#ai-estimator" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">AI Estimator</a>
+            <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Testimonials</a>
+            <a href="#team" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Team</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Contact</a>
+        </nav>
+        <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="#features" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Features</a>
+        <a href="#ai-estimator" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">AI Estimator</a>
+        <a href="#testimonials" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Testimonials</a>
+        <a href="#team" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Team</a>
+        <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-indigo-50">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-6 md:px-10 lg:px-16 text-center rounded-lg mx-4 mt-8 shadow-lg">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">Innovate, Create, Elevate Your Business with AI</h1>
+        <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">We provide cutting-edge AI solutions to help your business thrive in the digital age.</p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#ai-estimator" class="bg-white text-indigo-700 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-105">Try Our AI Estimator</a>
+            <a href="#features" class="bg-indigo-700 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-indigo-800 transition duration-300 transform hover:scale-105 border border-white">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg mx-4 mt-8 shadow-lg">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Core Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Innovative AI Solutions</h3>
+                <p class="text-gray-600 text-center">We leverage the latest AI technologies to build solutions that are not just effective, but also future-proof.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Scalable Architecture</h3>
+                <p class="text-gray-600 text-center">Our systems are designed to scale with your growth, ensuring seamless performance even at high demand.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 text-center">Dedicated Support</h3>
+                <p class="text-gray-600 text-center">We offer 24/7 dedicated support to ensure your operations run smoothly and efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Renovation ROI Estimator Section -->
+    <section id="ai-estimator" class="py-16 px-6 md:px-10 lg:px-16 bg-purple-100 rounded-lg mx-4 mt-8 shadow-lg">
+        <div class="bg-white p-8 rounded-xl shadow-lg max-w-2xl w-full mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">AI Renovation ROI Estimator</h2>
+            <p class="text-center text-gray-600 mb-8">Get AI-driven insights into the potential of your property renovations.</p>
+            <form id="roiForm" class="space-y-6">
+                <div>
+                    <label for="zipCode" class="block text-sm font-medium text-gray-700 mb-1">Zip Code</label>
+                    <input type="text" id="zipCode" name="zipCode" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g., 90210">
+                </div>
+                <div>
+                    <label for="currentValue" class="block text-sm font-medium text-gray-700 mb-1">Current Property Value ($)</label>
+                    <input type="number" id="currentValue" name="currentValue" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" placeholder="e.g., 500000">
+                </div>
+                <div>
+                    <label for="renovationType" class="block text-sm font-medium text-gray-700 mb-1">Renovation Type</label>
+                    <select id="renovationType" name="renovationType" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="">Select a type...</option>
+                        <option value="kitchen">Kitchen Remodel</option>
+                        <option value="bathroom">Bathroom Remodel</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="renovationLevel" class="block text-sm font-medium text-gray-700 mb-1">Renovation Scale</label>
+                    <select id="renovationLevel" name="renovationLevel" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="">Select a scale...</option>
+                        <option value="minor">Minor Refresh</option>
+                        <option value="mid-range">Mid-Range Remodel</option>
+                        <option value="upscale">Upscale Overhaul</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="inline-flex items-center justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Get Estimate</button>
+                </div>
+            </form>
+            <!-- Results Area -->
+            <div id="resultsArea" class="mt-10 p-6 bg-indigo-50 rounded-lg shadow-inner hidden">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Your Estimated ROI</h3>
+                <div class="space-y-3 text-lg">
+                    <p><span class="font-medium text-indigo-700">Estimated Renovation Cost:</span> <span id="costResult" class="font-bold text-gray-900"></span></p>
+                    <p><span class="font-medium text-indigo-700">Estimated Value Added:</span> <span id="valueResult" class="font-bold text-gray-900"></span></p>
+                    <p><span class="font-medium text-indigo-700">Projected ROI:</span> <span id="roiResult" class="font-bold text-green-700"></span></p>
+                </div>
+            </div>
+             <!-- Error Message Area -->
+            <div id="errorArea" class="mt-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-md hidden"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg mx-4 mt-8 shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Trusted by Innovators</h2>
+            <p class="text-lg text-gray-600 mb-12">Here's what our clients have to say.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <p class="text-gray-600 mb-6">"The insights were invaluable and surprisingly accurate. A game-changer for property investors!"</p>
+                    <div class="flex items-center justify-center">
+                        <p class="font-semibold text-gray-800">Jane Smith, Real Estate Developer</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <p class="text-gray-600 mb-6">"We were able to validate our new service offering in a fraction of the time. Highly recommended."</p>
+                    <div class="flex items-center justify-center">
+                        <p class="font-semibold text-gray-800">Michael Doe, CEO, Future Ventures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 px-6 md:px-10 lg:px-16 bg-gray-50 rounded-lg mx-4 mt-8 shadow-lg">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">The Minds Behind the Magic</h2>
+            <p class="text-lg text-gray-600 mb-12">We're a passionate group dedicated to your success.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <h3 class="text-xl font-semibold text-gray-900">Alex Chen</h3>
+                    <p class="text-indigo-600 mb-2">Co-Founder & CEO</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <h3 class="text-xl font-semibold text-gray-900">Brenda Lee</h3>
+                    <p class="text-indigo-600 mb-2">Co-Founder & CTO</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <h3 class="text-xl font-semibold text-gray-900">Chris Grant</h3>
+                    <p class="text-indigo-600 mb-2">Head of Product</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-10 lg:px-16 bg-white rounded-lg mx-4 mt-8 shadow-lg">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+        <div class="max-w-2xl mx-auto">
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-10 lg:px-16 mt-8 rounded-t-lg">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2024 YourStartup. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile menu toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- ROI Estimator Logic ---
+        const roiForm = document.getElementById('roiForm');
+        const resultsArea = document.getElementById('resultsArea');
+        const errorArea = document.getElementById('errorArea');
+        const costResult = document.getElementById('costResult');
+        const valueResult = document.getElementById('valueResult');
+        const roiResult = document.getElementById('roiResult');
+
+        roiForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent the form from actually submitting
+
+            // Hide previous results and errors
+            resultsArea.classList.add('hidden');
+            errorArea.classList.add('hidden');
+
+            // Get form values
+            const formData = new FormData(roiForm);
+            const renovationType = formData.get('renovationType');
+            const renovationLevel = formData.get('renovationLevel');
+            const currentValue = parseFloat(formData.get('currentValue'));
+
+            // Basic validation
+            if (!renovationType || !renovationLevel || !currentValue) {
+                errorArea.textContent = 'Please fill out all fields to get an estimate.';
+                errorArea.classList.remove('hidden');
+                return;
+            }
+
+            // --- Mock Calculation Logic ---
+            // In a real app, this would involve a complex model and real market data.
+            let baseCost = 0;
+            let costRecoupedRate = 0;
+
+            // 1. Determine base cost and ROI rate by renovation type
+            if (renovationType === 'kitchen') {
+                baseCost = 25000; // Average mid-range kitchen cost
+                costRecoupedRate = 0.72; // Recoups ~72% of its value on average
+            } else if (renovationType === 'bathroom') {
+                baseCost = 18000; // Average mid-range bathroom cost
+                costRecoupedRate = 0.65; // Recoups ~65% of its value on average
+            }
+
+            // 2. Adjust cost and ROI based on renovation scale
+            let scaleMultiplier = 1;
+            if (renovationLevel === 'minor') {
+                scaleMultiplier = 0.5;
+                costRecoupedRate += 0.05; // Minor renos often have slightly better ROI
+            } else if (renovationLevel === 'upscale') {
+                scaleMultiplier = 2.2;
+                costRecoupedRate -= 0.10; // Upscale renos often have lower % ROI
+            }
+            
+            const estimatedCost = baseCost * scaleMultiplier;
+            const estimatedValueAdded = estimatedCost * costRecoupedRate;
+            const projectedROI = ((estimatedValueAdded - estimatedCost) / estimatedCost) * 100;
+
+            // --- Display the results ---
+            costResult.textContent = `$${estimatedCost.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+            valueResult.textContent = `$${estimatedValueAdded.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
+            roiResult.textContent = `${projectedROI.toFixed(1)}%`;
+            
+            resultsArea.classList.remove('hidden');
+        });
+    </script>
+
 </body>
 </html>
